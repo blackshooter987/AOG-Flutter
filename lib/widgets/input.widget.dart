@@ -5,7 +5,6 @@ class Input extends StatelessWidget {
   final String label;
   final MoneyMaskedTextController ctrl;
 
-
   Input({
     @required this.label,
     @required this.ctrl

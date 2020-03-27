@@ -23,24 +23,24 @@ class LoadingButton extends StatelessWidget {
           ),
         ) :
         Container(
-      margin: EdgeInsets.all(30),
-      width: double.infinity,
-      decoration: BoxDecoration(
-          color: invert ? Theme.of(context).primaryColor : Colors.white.withOpacity(0.8),
-          borderRadius: BorderRadius.circular(60)
-      ),
-      height: 60,
-      child: FlatButton(
-        child: Text(
-          text,
-          style: TextStyle(
-            color: invert ? Colors.white.withOpacity(0.8) : Theme.of(context).primaryColor,
-            fontSize: 25,
-            fontFamily: 'Big Shoulders Display',
+          margin: EdgeInsets.all(30),
+          width: double.infinity,
+          decoration: BoxDecoration(
+              color: invert ? Theme.of(context).primaryColor : Colors.white.withOpacity(0.8),
+              borderRadius: BorderRadius.circular(60)
           ),
-        ),
-        onPressed: func,
-      ),
+          height: 60,
+          child: FlatButton(
+            child: Text(
+              text,
+              style: TextStyle(
+                color: invert ? Colors.white.withOpacity(0.8) : Theme.of(context).primaryColor,
+                fontSize: 25,
+                fontFamily: 'Big Shoulders Display',
+              ),
+            ),
+            onPressed: func,
+          ),
     );
   }
 }
